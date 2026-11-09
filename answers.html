@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>만점수학 초3-2 개념책 정답</title>
+<style>
+@font-face{font-family:Pretendard;src:url(fonts/Pretendard-Regular.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Pretendard;src:url(fonts/Pretendard-SemiBold.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:Pretendard;src:url(fonts/Pretendard-Bold.woff2) format("woff2");font-weight:700;font-display:swap}
+:root{--or:#F47B3E;--pe:#FDE6D6;--pl:#F7C6A8;--tx:#3A3A3A;--sub:#555555;--bg:#f6f3f1;--hh:52px}
+*{box-sizing:border-box}html{scroll-behavior:auto}
+body{margin:0;font-family:Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:var(--tx);background:var(--bg);word-break:keep-all;-webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;z-index:10;height:var(--hh);display:flex;align-items:center;gap:10px;padding:0 12px;padding-left:max(12px,env(safe-area-inset-left));background:#fff;border-bottom:3px solid var(--or);box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.badge{flex:none;background:var(--or);color:#fff;font-weight:700;border-radius:999px;padding:3px 10px;font-size:14px}
+.ttl{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
+.ttl small{display:block;font-weight:400;font-size:11.5px;color:var(--sub)}
+.ind{flex:none;font-size:13px;font-weight:600;color:var(--or);background:var(--pe);border-radius:999px;padding:4px 10px;font-variant-numeric:tabular-nums}
+select{flex:none;max-width:34vw;font:inherit;font-size:13px;border:1px solid var(--pl);border-radius:8px;padding:4px 6px;background:#fff;color:var(--tx)}
+main{max-width:920px;margin:0 auto;padding:10px 8px 40vh}
+.pg{position:relative;margin:0 0 12px;background:#fff;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.08);scroll-margin-top:calc(var(--hh) + 6px);overflow:hidden}
+.pg img{display:block;width:100%;height:auto;aspect-ratio:1240/1754}
+.pg .no{position:absolute;right:8px;top:8px;background:rgba(244,123,62,.9);color:#fff;font-size:12px;font-weight:600;border-radius:999px;padding:2px 8px}
+.hl{position:absolute;border:3px solid var(--or);border-radius:6px;pointer-events:none;animation:fl 2.4s ease-out 2 forwards}
+@keyframes fl{0%{opacity:1;box-shadow:0 0 0 6px rgba(244,123,62,.35)}100%{opacity:.15;box-shadow:0 0 0 0 rgba(244,123,62,0)}}
+@media (max-width:520px){select{width:62px;max-width:62px;padding:4px 2px}.ttl{font-size:14px}.badge{padding:3px 8px;font-size:13px}header{gap:7px;padding:0 8px}}
+footer{text-align:center;color:var(--sub);font-size:12px;padding:8px 0 20px}
+</style></head>
+<body>
+<header>
+ <span class="badge">3-2</span>
+ <div class="ttl">만점수학 초3-2 개념책 정답<small id="cur">정선영 만점수학</small></div>
+ <select id="jump" aria-label="단원 이동"></select>
+ <span class="ind" id="ind">1 / 15</span>
+</header>
+<main id="main"></main>
+<footer>정선영 만점수학 · 초등 3-2 개념학습 정답 · 쪽 표기는 82쪽 개념책 기준</footer>
+<script>
+const D={"n": 15, "units": [{"u": 1, "name": "곱셈", "p": 1, "to": 3, "bf": 1, "bt": 16}, {"u": 2, "name": "나눗셈", "p": 4, "to": 6, "bf": 17, "bt": 32}, {"u": 3, "name": "원", "p": 7, "to": 8, "bf": 33, "bt": 42}, {"u": 4, "name": "분수", "p": 9, "to": 11, "bf": 43, "bt": 56}, {"u": 5, "name": "들이와 무게", "p": 12, "to": 13, "bf": 57, "bt": 70}, {"u": 6, "name": "그림그래프", "p": 14, "to": 15, "bf": 71, "bt": 80}], "secs": [{"k": "1-01", "u": 1, "name": "(세 자리 수)×(한 자리 수)를 구하기(1)", "p": 1, "col": 0, "y": 0.1209, "bf": 2, "bt": 3}, {"k": "1-02", "u": 1, "name": "(세 자리 수)×(한 자리 수)를 구하기(2)", "p": 1, "col": 0, "y": 0.5993, "bf": 4, "bt": 7}, {"k": "1-03", "u": 1, "name": "(몇십)×(몇십) 또는 (몇십몇)×(몇십)을 구하기", "p": 1, "col": 1, "y": 0.7917, "bf": 8, "bt": 9}, {"k": "1-04", "u": 1, "name": "(몇)×(몇십몇)을 구하기", "p": 2, "col": 0, "y": 0.463, "bf": 10, "bt": 11}, {"k": "1-05", "u": 1, "name": "(몇십몇)×(몇십몇)을 구하기(1)", "p": 2, "col": 0, "y": 0.8754, "bf": 12, "bt": 13}, {"k": "1-06", "u": 1, "name": "(몇십몇)×(몇십몇)을 구하기(2)", "p": 2, "col": 1, "y": 0.5922, "bf": 14, "bt": 15}, {"k": "2-01", "u": 2, "name": "(몇십)÷(몇)을 구하기", "p": 4, "col": 0, "y": 0.1209, "bf": 18, "bt": 19}, {"k": "2-02", "u": 2, "name": "(몇십몇)÷(몇)을 구하기(1)", "p": 4, "col": 0, "y": 0.6055, "bf": 20, "bt": 21}, {"k": "2-03", "u": 2, "name": "(몇십몇)÷(몇)을 구하기(2)", "p": 4, "col": 1, "y": 0.3507, "bf": 22, "bt": 23}, {"k": "2-04", "u": 2, "name": "(몇십몇)÷(몇)을 구하기(3)", "p": 4, "col": 1, "y": 0.7623, "bf": 24, "bt": 25}, {"k": "2-05", "u": 2, "name": "(세 자리 수)÷(한 자리 수)를 구하기", "p": 5, "col": 0, "y": 0.479, "bf": 26, "bt": 29}, {"k": "2-06", "u": 2, "name": "맞게 계산했는지 확인해 보기", "p": 5, "col": 1, "y": 0.5752, "bf": 30, "bt": 31}, {"k": "3-01", "u": 3, "name": "원의 중심, 반지름, 지름 알아보기(1), (2)", "p": 7, "col": 0, "y": 0.1209, "bf": 34, "bt": 35}, {"k": "3-02", "u": 3, "name": "원의 성질 알아보기", "p": 7, "col": 0, "y": 0.6893, "bf": 36, "bt": 37}, {"k": "3-03", "u": 3, "name": "컴퍼스를 이용하여 원을 그려 보기", "p": 7, "col": 1, "y": 0.4523, "bf": 38, "bt": 39}, {"k": "3-04", "u": 3, "name": "원을 이용하여 여러 가지 모양을 그려 보기", "p": 8, "col": 0, "y": 0.3534, "bf": 40, "bt": 41}, {"k": "4-01", "u": 4, "name": "분수로 나타내어 보기", "p": 9, "col": 0, "y": 0.1201, "bf": 44, "bt": 45}, {"k": "4-02", "u": 4, "name": "분수만큼은 얼마인지 알아보기(1)", "p": 9, "col": 0, "y": 0.6956, "bf": 46, "bt": 47}, {"k": "4-03", "u": 4, "name": "분수만큼은 얼마인지 알아보기(2)", "p": 9, "col": 1, "y": 0.4025, "bf": 48, "bt": 49}, {"k": "4-04", "u": 4, "name": "여러 가지 분수를 알아보기(1)", "p": 10, "col": 0, "y": 0.1583, "bf": 50, "bt": 51}, {"k": "4-05", "u": 4, "name": "여러 가지 분수를 알아보기(2)", "p": 10, "col": 0, "y": 0.6973, "bf": 52, "bt": 53}, {"k": "4-06", "u": 4, "name": "분모가 같은 분수의 크기를 비교하기", "p": 10, "col": 1, "y": 0.5147, "bf": 54, "bt": 55}, {"k": "5-01", "u": 5, "name": "들이를 비교하기", "p": 12, "col": 0, "y": 0.1209, "bf": 58, "bt": 59}, {"k": "5-02", "u": 5, "name": "들이의 단위 알아보기, 들이를 어림하고 재어 보기", "p": 12, "col": 0, "y": 0.5343, "bf": 60, "bt": 61}, {"k": "5-03", "u": 5, "name": "들이의 덧셈과 뺄셈을 해 보기", "p": 12, "col": 1, "y": 0.2002, "bf": 62, "bt": 63}, {"k": "5-04", "u": 5, "name": "무게를 비교하기", "p": 12, "col": 1, "y": 0.6376, "bf": 64, "bt": 65}, {"k": "5-05", "u": 5, "name": "무게의 단위 알아보기, 무게를 어림하고 재어 보기", "p": 13, "col": 0, "y": 0.2726, "bf": 66, "bt": 67}, {"k": "5-06", "u": 5, "name": "무게의 덧셈과 뺄셈을 해 보기", "p": 13, "col": 0, "y": 0.6993, "bf": 68, "bt": 69}, {"k": "6-01", "u": 6, "name": "그림그래프를 알아보기", "p": 14, "col": 0, "y": 0.1209, "bf": 72, "bt": 75}, {"k": "6-02", "u": 6, "name": "그림그래프로 나타내어 보기", "p": 14, "col": 0, "y": 0.7926, "bf": 76, "bt": 77}, {"k": "6-03", "u": 6, "name": "표에서 알 수 있는 것 찾기, 자료를 수집하여 표로 나타내기", "p": 14, "col": 1, "y": 0.618, "bf": 78, "bt": 79}]};
+const main=document.getElementById('main'),ind=document.getElementById('ind'),cur=document.getElementById('cur'),sel=document.getElementById('jump');
+const pad=n=>String(n).padStart(3,'0');
+for(let i=1;i<=D.n;i++){
+  const d=document.createElement('section');d.className='pg';d.id='p'+i;d.dataset.p=i;
+  d.innerHTML=`<img alt="정답 ${i}쪽" width="1240" height="1754" ${i<=2?'':'loading="lazy"'} decoding="async" src="answers/p${pad(i)}.webp"><span class="no">정답 ${i}</span>`;
+  main.appendChild(d);
+}
+sel.innerHTML='<option value="">목차</option>'+D.units.map(u=>`<optgroup label="${u.u}. ${u.name}"><option value="u=${u.u}">${u.u}. ${u.name} (정답 ${u.p}쪽)</option>`+D.secs.filter(s=>s.u===u.u).map(s=>`<option value="p=${s.p}&s=${s.k}">${s.k.split('-')[1]}. ${s.name}</option>`).join('')+'</optgroup>').join('');
+sel.onchange=()=>{if(sel.value){location.hash=sel.value;sel.value='';}};
+function unitOf(p){let r=D.units[0];for(const u of D.units) if(u.p<=p) r=u;return r;}
+function parse(){
+  const q=new URLSearchParams(location.hash.replace(/^#/,''));
+  let p=parseInt(q.get('p')),s=q.get('s'),u=q.get('u'),sec=null;
+  if(s){ if(/^\d+$/.test(s)&&u) s=u+'-'+s.padStart(2,'0'); sec=D.secs.find(x=>x.k===s)||null; if(sec&&!p) p=sec.p; }
+  if(!p&&u){const uu=D.units.find(x=>x.u==u); if(uu) p=uu.p;}
+  if(!p||p<1) p=null; else if(p>D.n) p=D.n;
+  return {p,sec};
+}
+function go(){
+  const {p,sec}=parse(); if(!p) return;
+  const el=document.getElementById('p'+p);
+  el.scrollIntoView({block:'start'});
+  // images above have reserved size (aspect-ratio), so offset is stable; re-snap once after fonts/layout
+  requestAnimationFrame(()=>el.scrollIntoView({block:'start'}));
+  document.querySelectorAll('.hl').forEach(x=>x.remove());
+  if(sec&&sec.p===p){const h=document.createElement('div');h.className='hl';
+    const x0=sec.col?0.505:0.077,w=0.42; h.style.left=(x0*100)+'%';h.style.width=(w*100)+'%';
+    h.style.top=((sec.y-0.012)*100)+'%';h.style.height='4.2%';el.appendChild(h);}
+  update(p);
+}
+function update(p){ind.textContent=p+' / '+D.n;const u=unitOf(p);cur.textContent=u.u+'. '+u.name+' · 책 '+u.bf+'~'+u.bt+'쪽';document.body.dataset.cur=p;}
+let tick=false;
+addEventListener('scroll',()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{tick=false;
+  const y=document.querySelector('header').offsetHeight+innerHeight*0.25;let best=1;
+  for(const s of main.children){ if(s.getBoundingClientRect().top<=y) best=+s.dataset.p; else break; }
+  update(best);});},{passive:true});
+addEventListener('hashchange',go);
+if('scrollRestoration' in history) history.scrollRestoration='manual';
+go(); if(!parse().p) update(1);
+</script>
+</body></html>
